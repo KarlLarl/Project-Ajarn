@@ -61,7 +61,6 @@ h6{
     margin-left: 5px;
 }
 .back{
-    background: chartreuse;
     padding: 10px;
     .card{
         background: #DCD7D7;
@@ -87,6 +86,7 @@ h6{
         .all_small{
             margin-top: 10px;
             height: 220px;
+            overflow: auto;
             .small_topic_card{
             background: white;
             width: 230px;

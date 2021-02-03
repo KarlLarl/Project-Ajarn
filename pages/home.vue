@@ -7,6 +7,7 @@
         </div>
         <div class="down">
             <card></card>
+            <card></card>
         </div>
     </div>   
 </template>
@@ -44,6 +45,9 @@ export default {
             border: none;
             // background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Edit_icon_%28the_Noun_Project_30184%29.svg/1024px-Edit_icon_%28the_Noun_Project_30184%29.svg.png");
         }
+    }
+    .down{
+        display: flex;
     }
 }
 </style>
