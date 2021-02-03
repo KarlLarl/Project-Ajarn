@@ -34,7 +34,7 @@ $pd10:10px;
 
 button{
     font-weight: bold;
-    font-size: 22px;
+    font-size: 18px;
 }
 .nev{
     background: $bg;

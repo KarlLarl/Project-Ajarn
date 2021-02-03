@@ -5,13 +5,17 @@
             <div>หัวข้อทั้งหมด</div>
             <button class="btn-top">สร้างหัวข้อ</button>
         </div>
+        <div class="down">
+            <card></card>
+        </div>
     </div>   
 </template>
 <script>
 import nevbar from '@/components/nevbar'
+import card from '@/components/card'
 export default {
     components:{
-        nevbar
+        nevbar,card
     }
 
 }
@@ -38,6 +42,7 @@ export default {
             border-radius: 10px;
             background: #EAE4E4;
             border: none;
+            // background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Edit_icon_%28the_Noun_Project_30184%29.svg/1024px-Edit_icon_%28the_Noun_Project_30184%29.svg.png");
         }
     }
 }
