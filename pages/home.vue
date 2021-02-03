@@ -1,0 +1,44 @@
+<template>
+    <div class="main">
+        <nevbar></nevbar>
+        <div class="top">
+            <div>หัวข้อทั้งหมด</div>
+            <button class="btn-top">สร้างหัวข้อ</button>
+        </div>
+    </div>   
+</template>
+<script>
+import nevbar from '@/components/nevbar'
+export default {
+    components:{
+        nevbar
+    }
+
+}
+</script>
+<style lang="scss" scoped>
+.main{
+    background: white;
+    width: 100vw;
+    height: 100vh;
+    .top{
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 18px;
+        align-items: center;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        .btn-top{
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            background: #EAE4E4;
+            border: none;
+        }
+    }
+}
+</style>

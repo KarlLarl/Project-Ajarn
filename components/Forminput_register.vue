@@ -27,6 +27,7 @@
   </div>
 </template>
 <style lang="scss" scoped>
+$wd100:100%;
 h4{
     width: 30%;
 }
@@ -42,19 +43,19 @@ h4{
     margin-top: 10px;
     font-weight: bold;
     margin-left: 20px;
-    width: 100%;
+    width: $wd100;
     }
     .test{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: $wd100;
     }
 @media screen and (max-width: 500px) /*จอเล็ก*/{
     .test{
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: $wd100;
     flex-flow: wrap;
         }
     }
