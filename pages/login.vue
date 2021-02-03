@@ -7,8 +7,8 @@
                     <div class="txt_input"><Forminput/></div>
                     <div class="btn-flex">
                         <div class="fix-size">
-                            <div><button class="btn-login">Login</button></div>
-                            <div><button class="btn-facebook">Facebook</button></div>
+                            <div><button onclick="window.location.href='/home'" class="btn-login" >Login</button></div>
+                            <div><button onclick="window.location.href='/home'" class="btn-facebook">Facebook</button></div>
                             <!-- <div><button class="btn-facebook">
                                 <div class="img-facebook"></div>
                                 Facebook
