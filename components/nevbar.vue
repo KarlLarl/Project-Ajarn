@@ -29,7 +29,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-$bg:#F7A6EE;
+$bg:#E597FA;
 $pd10:10px;
 
 button{

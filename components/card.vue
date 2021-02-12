@@ -22,7 +22,17 @@
 
                 <div class="small_topic_card" style="margin-top:10px">
                     <div class="topic_small">
-                        Requirments
+                        Login
+                    </div>
+                    <div style="margin-top:20px">
+                        วันนัดหมาย
+                    </div>
+                </div>
+                
+
+                <div class="small_topic_card" style="margin-top:10px">
+                    <div class="topic_small">
+                        Common
                     </div>
                     <div style="margin-top:20px">
                         วันนัดหมาย
@@ -31,13 +41,14 @@
 
                 <div class="small_topic_card" style="margin-top:10px">
                     <div class="topic_small">
-                        Requirments
+                        Finish
                     </div>
                     <div style="margin-top:20px">
                         วันนัดหมาย
                     </div>
                 </div>
 
+                
             </div>
             <!-- btn ด้านล่าง -->
             <div class="card_down">
@@ -57,13 +68,33 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+// /* Track */
+// ::-webkit-scrollbar-track {
+//   background: #f1f1f1; 
+// }
+ 
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+//   background: #888; 
+// }
+
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: #555; 
+// }
 h6{
     margin-left: 5px;
 }
 .back{
     padding: 10px;
     .card{
-        background: #DCD7D7;
+        background: #F2DDFF;
         padding: 10px;
         width: fit-content;
         border-radius: 10px;
@@ -87,6 +118,7 @@ h6{
             margin-top: 10px;
             height: 220px;
             overflow: auto;
+            
             .small_topic_card{
             background: white;
             width: 230px;

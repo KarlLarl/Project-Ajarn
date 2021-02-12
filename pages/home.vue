@@ -8,6 +8,12 @@
         <div class="down">
             <card></card>
             <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+
         </div>
     </div>   
 </template>
@@ -24,7 +30,7 @@ export default {
 <style lang="scss" scoped>
 .main{
     background: white;
-    width: 100vw;
+    width: fit-content;
     height: 100vh;
     .top{
         display: flex;
@@ -48,6 +54,8 @@ export default {
     }
     .down{
         display: flex;
+        flex-flow: wrap;
+        width: 100%;
     }
 }
 </style>
