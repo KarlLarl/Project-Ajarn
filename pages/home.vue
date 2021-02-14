@@ -3,7 +3,7 @@
         <nevbar></nevbar>
         <div class="top">
             <div>หัวข้อทั้งหมด</div>
-            <button class="btn-top">สร้างหัวข้อ</button>
+            <button class="btn-top" onclick="window.location.href='/create_topic'">สร้างหัวข้อ</button>
         </div>
         <div class="down">
             <card></card>
@@ -11,8 +11,7 @@
             <card></card>
             <card></card>
             <card></card>
-            <card></card>
-            <card></card>
+            
 
         </div>
     </div>   
@@ -30,8 +29,9 @@ export default {
 <style lang="scss" scoped>
 .main{
     background: white;
-    width: fit-content;
+    width: 100vw;
     height: 100vh;
+    padding-top: 3rem;
     .top{
         display: flex;
         justify-content: space-between;
@@ -42,6 +42,8 @@ export default {
         padding-top: 15px;
         padding-left: 10px;
         padding-right: 10px;
+        // position: fixed;
+        // width: 100%;
         .btn-top{
             padding: 10px;
             font-size: 18px;
@@ -55,7 +57,8 @@ export default {
     .down{
         display: flex;
         flex-flow: wrap;
-        width: 100%;
+        // width: 100%;
+        justify-content: center;
     }
 }
 </style>

@@ -13,38 +13,38 @@
             <div class="all_small">
                 <div class="small_topic_card" style="margin-top:10px">
                     <div class="topic_small">
-                        Requirments
+                        <label>Requirments</label>
                     </div>
                     <div style="margin-top:20px">
-                        วันนัดหมาย
+                        <label>วันนัดหมาย</label>
                     </div>
                 </div>
 
                 <div class="small_topic_card" style="margin-top:10px">
                     <div class="topic_small">
-                        Login
+                        <label>Login</label>
                     </div>
                     <div style="margin-top:20px">
-                        วันนัดหมาย
+                        <label>วันนัดหมาย</label>
                     </div>
                 </div>
                 
 
                 <div class="small_topic_card" style="margin-top:10px">
                     <div class="topic_small">
-                        Common
+                        <label>Common</label>
                     </div>
                     <div style="margin-top:20px">
-                        วันนัดหมาย
+                        <label>วันนัดหมาย</label>
                     </div>
                 </div>
 
                 <div class="small_topic_card" style="margin-top:10px">
                     <div class="topic_small">
-                        Finish
+                        <label>Finish</label>
                     </div>
                     <div style="margin-top:20px">
-                        วันนัดหมาย
+                        <label>วันนัดหมาย</label>
                     </div>
                 </div>
 

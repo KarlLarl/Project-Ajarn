@@ -1,8 +1,8 @@
 <template>
     <div class="nev">
         <div class="top">
-            <button class="button_btn">Home</button>
-            <button class="button_btn">นัดหมาย</button>
+            <button onclick="window.location.href='/home'" class="button_btn">Home</button>
+            <button onclick="window.location.href='/login'" class="button_btn">นัดหมาย</button>
 
             <div class="search">
                 <input  class="input_search" type="text" value="">
@@ -33,13 +33,15 @@ $bg:#E597FA;
 $pd10:10px;
 
 button{
-    font-weight: bold;
+    // font-weight: bold;
     font-size: 18px;
 }
 .nev{
     background: $bg;
     width: 100%;
     padding: $pd10;
+    position: fixed;
+    top:0;
     .top{
         background: $bg;
         padding-left: $pd10;
@@ -69,7 +71,7 @@ button{
                     width: 100%;
                     border: none;
                     align-items: center;
-                    background-size: cover;
+                    background-size: 100% 100%;
                     background-image: url("https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png");
                 }
             }
