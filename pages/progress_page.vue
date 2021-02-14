@@ -2,11 +2,12 @@
     <div class="main">
         <nevbar></nevbar>
         <forminput></forminput>
-
+        
         <div class="btn">
-            <div><button class="btn_size" style="background:#2957F8">บันทึก</button></div>
+            <div><button class="btn_size" style="background:#2957F8">ยืนยัน</button></div>
             <div><button class="btn_size" style="background:#FB5959">ยกเลิก</button></div>
         </div>
+
 
     </div>
 </template>
@@ -26,13 +27,16 @@ export default {
     height: 100vh;
     padding-top: 6rem;
     .btn{
-        text-align: center;
+        // text-align: center;
         margin-top: 3rem;
+        display: flex;
+        justify-content: space-evenly;
         .btn_size{
             padding: 10px;
+            padding-left: 5rem;
+            padding-right: 5rem;
             border: 1px solid black;
             border-radius: 7px;
-            width: 25%;
             margin-bottom: 10px;
             color: white;
             font-weight: bold;
@@ -40,5 +44,13 @@ export default {
         }
     }
 }
-
+// @media screen and (max-width: 899px) /*จอเล็ก*/{
+// .left{
+//   width: 50%;
+//   padding-left: 10rem;
+//   flex-direction: column;
+//   justify-content: center;
+//   display: flex;
+//     }
+//   }
 </style>

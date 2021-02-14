@@ -11,6 +11,7 @@
             <card></card>
             <card></card>
             <card></card>
+            <card></card>
             
 
         </div>
@@ -35,7 +36,7 @@ export default {
     .top{
         display: flex;
         justify-content: space-between;
-        font-weight: bold;
+        // font-weight: bold;
         font-size: 18px;
         align-items: center;
         padding-bottom: 15px;
@@ -47,7 +48,7 @@ export default {
         .btn-top{
             padding: 10px;
             font-size: 18px;
-            font-weight: bold;
+            // font-weight: bold;
             border-radius: 10px;
             background: #EAE4E4;
             border: none;

@@ -4,7 +4,7 @@
         <forminput></forminput>
 
         <div class="btn">
-            <div><button class="btn_size" style="background:#2957F8">บันทึก</button></div>
+            <div><button class="btn_size" style="background:#2957F8">ยืนยัน</button></div>
             <div><button class="btn_size" style="background:#FB5959">ยกเลิก</button></div>
         </div>
 
@@ -40,5 +40,13 @@ export default {
         }
     }
 }
-
+// @media screen and (max-width: 899px) /*จอเล็ก*/{
+// .left{
+//   width: 50%;
+//   padding-left: 10rem;
+//   flex-direction: column;
+//   justify-content: center;
+//   display: flex;
+//     }
+//   }
 </style>

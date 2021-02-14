@@ -2,7 +2,7 @@
     <div class="nev">
         <div class="top">
             <button onclick="window.location.href='/home'" class="button_btn">Home</button>
-            <button onclick="window.location.href='/login'" class="button_btn">นัดหมาย</button>
+            <button onclick="window.location.href='/appointment'" class="button_btn">นัดหมาย</button>
 
             <div class="search">
                 <input  class="input_search" type="text" value="">
@@ -14,7 +14,7 @@
             </div>
 
             <button class="button_btn">แจ้งเตือน</button>
-            <button class="button_btn">ชื่อ-สกุล</button>
+            <button class="button_btn" onclick="window.location.href='/login'">ชื่อ-สกุล</button>
         </div>
     </div>
 </template>
