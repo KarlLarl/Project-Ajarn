@@ -6,28 +6,37 @@
             <button class="btn-top" onclick="window.location.href='/create_topic'">สร้างหัวข้อ</button>
         </div>
         <div class="down">
+            <!-- <card></card>
             <card></card>
             <card></card>
             <card></card>
             <card></card>
-            <card></card>
-            <card></card>
-            
-
+            <card></card> -->
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
         </div>
     </div>   
 </template>
 <script>
 import nevbar from '@/components/nevbar'
 import card from '@/components/card'
+import Card from '@/components/card_home'
 export default {
     components:{
-        nevbar,card
+        nevbar,card,Card
     }
 
 }
 </script>
+
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css?family=Prompt:100,200,400,500,600,700&display=swap');
+
+*{font-family: 'Prompt', sans-serif;}
+
 .main{
     background: white;
     width: 100vw;

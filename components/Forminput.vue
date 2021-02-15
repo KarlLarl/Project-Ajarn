@@ -90,7 +90,7 @@
     <!-- ถ้าหน้า progress_page -->
     <div v-if="path === 'progress_page'" class="detail">
             <div class="create_top">
-                <label class="top_name">รายงานความคีบหน้า</label>
+                <label class="top_name">รายงานความคืบหน้า</label>
             </div>
             <!-- ข้อมูลการกรอก -->
             <div class="input_info">
@@ -138,7 +138,12 @@ export default {
     } 
   }
 </script>
+
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css?family=Prompt:100,200,400,500,600,700&display=swap');
+
+*{font-family: 'Prompt', sans-serif;}
+
 .in_log {
   width: 100%;
   padding: 12px 20px;

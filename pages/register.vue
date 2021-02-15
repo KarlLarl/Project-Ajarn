@@ -27,6 +27,9 @@ export default {
 </script>
 
 <style lang="scss" scopeed>
+@import url('https://fonts.googleapis.com/css?family=Prompt:100,200,400,500,600,700&display=swap');
+
+*{font-family: 'Prompt', sans-serif;}
 .layout{
     width: 100vw;
     height: 100vh;

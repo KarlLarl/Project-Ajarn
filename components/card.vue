@@ -1,6 +1,6 @@
 <template>
     <div class="back">
-        <div class="card">
+        <button class="card">
             <!-- หัวข้อด้านบน -->
             <div class="card_top">
                 <div class="txt_top">
@@ -55,7 +55,7 @@
                 <button>add topic card</button>
                 <button>GitHub</button>
             </div>
-        </div>
+        </button>
     </div>
     
 </template>
@@ -124,7 +124,7 @@ h6{
             width: 230px;
             border-radius: 10px;
             padding: 5px;
-            font-weight: bold;
+            // font-weight: bold;
             } 
         }
 

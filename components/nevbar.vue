@@ -29,6 +29,10 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css?family=Prompt:100,200,400,500,600,700&display=swap');
+
+*{font-family: 'Prompt', sans-serif;}
+
 $bg:#E597FA;
 $pd10:10px;
 
