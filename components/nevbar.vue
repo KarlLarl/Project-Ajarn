@@ -7,9 +7,9 @@
             <div class="search">
                 <input  class="input_search" type="text" value="">
                 <div class="search_icon">
-                    <button class="myicon">
-                        <!-- <img src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png"> -->
-                    </button>          
+                    <a onclick="window.location.href='/create_topic'">
+                        <div class="myicon"></div>
+                    </a>        
                 </div>
             </div>
 
@@ -46,6 +46,7 @@ button{
     padding: $pd10;
     position: fixed;
     top:0;
+    box-shadow: 5px 5px 5px 5px rgba(224,224,224,0.5); 
     .top{
         background: $bg;
         padding-left: $pd10;
@@ -69,12 +70,13 @@ button{
             }
             .search_icon{
                 width: 10%;
-                border: none;
+                padding: 5px;
+                // border: none;
                 .myicon{
                     height: 100%;
-                    width: 100%;
-                    border: none;
-                    align-items: center;
+                    // width: 100%;
+                    // border: 1px solid black;
+                    // align-items: center;
                     background-size: 100% 100%;
                     background-image: url("https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png");
                 }
@@ -82,5 +84,13 @@ button{
         }
     }
 }
-
+@media screen and (max-width: 700px) {
+    button{font-size: 12px;}
+    .nev .top .search .input_search{
+                width: 70%;
+            }
+    .nev .top .search .search_icon{
+                width: 30%;
+    }
+}
 </style>

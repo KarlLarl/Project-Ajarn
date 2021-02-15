@@ -188,4 +188,14 @@ export default {
             }
         }  
 }
+@media screen and (max-width: 900px) {
+    .detail .input_info .left{
+    padding-left: 8rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .detail .input_info .left{
+    padding-left: 2rem;
+    }
+}
 </style>

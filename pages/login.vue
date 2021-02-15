@@ -17,8 +17,8 @@
                         </div>
                     </div>
                     <div class="flex-row">
-                        <div style="font-size:14px;"> Forgot : </div>
-                        <nuxt-link to=""><div class="user-pass" style="font-size:14px;">Username / Password ?</div></nuxt-link>
+                        <div> Forgot : </div>
+                        <nuxt-link to=""><div class="user-pass">Username / Password ?</div></nuxt-link>
                     </div>
 
                     <div><nuxt-link to="/register"><div class="create">Create your Account</div></nuxt-link></div>
@@ -113,6 +113,7 @@ export default {
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
+                font-size: 14px;
                 .user-pass{
                 color: red;
                 margin-left: 5px;
@@ -126,5 +127,22 @@ export default {
             }
         }
     }
+}
+
+@media screen and (max-width: 500px) {
+.layout .background .back_white .input_data .btn-flex .btn-login {
+    font-size: 10px;
+    width: 150%;
+    }
+.layout .background .back_white .input_data .btn-flex .btn-facebook {
+    font-size: 10px;
+    width: 150%;
+    }
+.layout .background .back_white .input_data .flex-row{
+    font-size: 7px;
+    }
+.create{
+    font-size: 7px;
+}
 }
 </style>
