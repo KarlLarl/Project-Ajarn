@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div >
         <div class="card" >
             <div class="into_card">
                 <a onclick="window.location.href='/show'">
@@ -8,11 +8,10 @@
                         <div class="info_card">
                             <Label class="card_name">Name</Label>
                             <Label class="card_date">10/20/2010</Label>
-                            <!-- <div class="btn_git">
-                                <button>Github</button>
-                            </div> -->
                         </div>
+                        
                     </div>
+                    
                 </a>
             </div>
             
@@ -34,8 +33,8 @@ export default {
 <style lang="scss" scoped>
 .card{
     // background: cadetblue;
-    width: 240px;
-    height: 240px;
+    width: 14rem;
+    height: 14rem;
     padding: 10px;
     
 

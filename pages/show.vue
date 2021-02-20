@@ -10,6 +10,8 @@
                 </div>
             </div>
             <div>
+                <button class="btn_top" onclick="window.location.href='/edit'">แก้ไขโปรเจค</button>
+                <button class="btn_top">เพิ่มสมาชิก</button>
                 <button class="btn_top">Github</button>
                 <button class="btn_top" onclick="window.location.href='/progress_page'">เพิ่มความคืบหน้า</button>
             </div>
