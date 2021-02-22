@@ -2,7 +2,7 @@
     <div class="main">
         <nevbar></nevbar>
         <div class="top">
-            <div>หัวข้อทั้งหมด</div>
+            <div style="font-size: 1rem;">หัวข้อทั้งหมด</div>
             <button class="btn-top" onclick="window.location.href='/create_topic'">สร้างหัวข้อ</button>
         </div>
         <div class="down">
@@ -56,11 +56,16 @@ export default {
         // width: 100%;
         .btn-top{
             padding: 10px;
-            font-size: 18px;
+            font-size: 1rem;
             // font-weight: bold;
             border-radius: 10px;
             background: #EAE4E4;
             border: none;
+            box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+            transition: 0.4s ease-out;
+            &:hover {
+            box-shadow: 6px 6px rgba(0, 0, 0, 0.6);
+            }
             // background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Edit_icon_%28the_Noun_Project_30184%29.svg/1024px-Edit_icon_%28the_Noun_Project_30184%29.svg.png");
         }
     }

@@ -99,13 +99,14 @@ export default {
         padding: 1rem;
         justify-content: space-between;
         // padding-top: 1rem;
-        // .btn_top{
-        //     padding: 10px;
-        //     font-size: 18px;
-        //     border-radius: 10px;
-        //     background: hsl(0, 12%, 91%);
-        //     border: none;
-        // }
+        .btn_top{
+            border: 1px solid darkgrey;
+            box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+            transition: 0.4s ease-out;
+            &:hover {
+            box-shadow: 6px 6px rgba(0, 0, 0, 0.6);
+            }
+        }
         .img_next{
             padding: 7px;
             margin-left: 1rem;

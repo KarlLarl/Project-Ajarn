@@ -88,6 +88,11 @@ export default {
                     font-weight: bold;
                     font-size: 15px;
                     margin-bottom: 10px;
+                    box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+                    transition: 0.4s ease-out;
+                    &:hover {
+                    box-shadow: 6px 6px rgba(0, 0, 0, 0.6);
+                        }
                     }
                     .btn-facebook{
                     margin-bottom: 10px;
@@ -100,13 +105,11 @@ export default {
                     border-radius: 10px;
                     padding:10px;
                     text-align: center;
-                        // .img-facebook{
-                        //     width: 18px;
-                        //     height: 18px;
-                        //     background-image: url('~@/assets/facebook.png');
-                        //     background-repeat: round;
-                        //     margin-right: 30px;
-                        // }
+                    box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+                    transition: 0.4s ease-out;
+                    &:hover {
+                    box-shadow: 6px 6px rgba(0, 0, 0, 0.6);
+                        }
                     }
                 }
             .flex-row{

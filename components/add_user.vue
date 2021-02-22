@@ -52,8 +52,15 @@ export default {
             justify-content: flex-end;
             .btn_close{
             background: #e6e6e6;
-            border: outset;
+            // border: outset;
             color: #908787;
+            box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+            transition: 0.4s ease-out;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            &:hover {
+            box-shadow: 6px 6px rgba(0, 0, 0, 0.6);
+            }
         }
         }
 
@@ -65,9 +72,14 @@ export default {
                 background: #e6e6e6;
                 width: 20%;
                 margin-left: 1rem;
-                border: outset;
+                // border: outset;
                 color: #908787;
-                // box-shadow: 5px 5px 5px 5px rgba(224,224,224,0.5); 
+                // box-shadow: 6px 6px rgba(0, 0, 0, 0.6);
+                box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+                transition: 0.4s ease-out;
+                &:hover {
+                box-shadow: 6px 6px rgba(0, 0, 0, 0.6);
+                }
             }
             .input_sty{
                 background: #e6e6e6;

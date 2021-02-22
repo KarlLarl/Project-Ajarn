@@ -30,13 +30,18 @@ export default {
         margin-top: 3rem;
         .btn_size{
             padding: 10px;
-            border: 1px solid black;
+            border: none;
             border-radius: 7px;
             width: 25%;
             margin-bottom: 10px;
             color: white;
             font-weight: bold;
             font-size: 18px;
+            box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+            transition: 0.4s ease-out;
+            &:hover {
+            box-shadow: 6px 6px rgba(0, 0, 0, 0.6);
+            }
         }
     }
 }

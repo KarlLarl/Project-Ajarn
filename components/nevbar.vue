@@ -38,7 +38,7 @@ $pd10:10px;
 
 button{
     // font-weight: bold;
-    font-size: 18px;
+    font-size: 1rem;
 }
 .nev{
     background: $bg;
@@ -47,6 +47,7 @@ button{
     position: fixed;
     top:0;
     box-shadow: 5px 5px 5px 5px rgba(224,224,224,0.5); 
+    // box-shadow: 6px 6px rgba(0, 0, 0, 0.6);
     .top{
         background: $bg;
         padding-left: $pd10;

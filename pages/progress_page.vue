@@ -35,12 +35,18 @@ export default {
             padding: 10px;
             padding-left: 5rem;
             padding-right: 5rem;
-            border: 1px solid black;
+            // border: 1px solid black;
+            border: none;
             border-radius: 7px;
             margin-bottom: 10px;
             color: white;
             font-weight: bold;
             font-size: 18px;
+            box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+            transition: 0.4s ease-out;
+            &:hover {
+            box-shadow: 6px 6px rgba(0, 0, 0, 0.6);
+            }
         }
     }
 }

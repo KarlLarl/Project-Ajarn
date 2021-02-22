@@ -3,7 +3,7 @@
         <div class="background">
             <div class="back_white">
                 <div class="topic-head">
-                    Register
+                    <label>Register</label> 
                 </div>
                 <div><Forminput/></div>
                 <div class="btn-position">
@@ -49,7 +49,6 @@ export default {
             align-items: center;
             width: 60%;
             .topic-head{
-                font-weight: bold;
                 text-align: center;
                 font-size: 20px;
             }
@@ -65,7 +64,15 @@ export default {
                     color: white;
                     border: none;
                     border-radius: 10px;
-                    font-weight: bold;               
+                    font-weight: bold;
+                    box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+                    transition: 0.4s ease-out;
+                    &:hover {
+                    box-shadow: 6px 6px rgba(0, 0, 0, 0.6);
+                    }
+                    // &:active{
+                    //     border: none;
+                    // }               
                 }
             }
 

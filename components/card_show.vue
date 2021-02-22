@@ -39,7 +39,12 @@ export default {
         // border: 1px solid black; 
         height: 100%; 
         border-radius: 5px;
-        box-shadow: 5px 5px 5px 0 rgba(224,224,224,0.5); 
+        // box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+        box-shadow: 5px 5px 10px 5px rgba(224,224,224,0.5);
+        transition: 0.4s ease-out;
+        &:hover {
+        box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.6);
+        }
         .card_img{
             height: 70%;
             width: 100%;

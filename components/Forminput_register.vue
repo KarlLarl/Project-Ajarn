@@ -1,34 +1,38 @@
 <template>
   <div class="width100">
         <div class="test">
-          <h4>FirstName</h4>
+          <label>FirstName</label>
           <input placeholder="" type="text">
         </div>
         <div class="test">
-            <h4>LastName</h4>
+            <label>LastName</label>
             <input placeholder="" type="text">
         </div>
         <div class="test">
-            <h4>Email</h4>
+            <label>Email</label>
             <input placeholder="" type="email">
         </div>
         <div class="test">
-            <h4>Password</h4>
+            <label>Password</label>
             <input placeholder="" type="password">
         </div>
         <div class="test">
-            <h4>Comfirm Password</h4>
+            <label>Comfirm Password</label>
             <input placeholder="" type="password">
         </div>
         <div class="test">
-            <h4>Phone</h4>
+            <label>Phone</label>
             <input placeholder="" type="number">
         </div>
   </div>
 </template>
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css?family=Prompt:100,200,400,500,600,700&display=swap');
+
+*{font-family: 'Prompt', sans-serif;}
+
 $wd100:100%;
-h4{
+label{
     width: 30%;
 }
 .width100{
@@ -41,7 +45,7 @@ h4{
     background-color: #F5EBEB;
     border-radius: 10px;
     margin-top: 10px;
-    font-weight: bold;
+    // font-weight: bold;
     margin-left: 20px;
     width: $wd100;
     }
