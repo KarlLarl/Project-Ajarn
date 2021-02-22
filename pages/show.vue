@@ -3,7 +3,7 @@
         <Nevbar></Nevbar>
         <div class="top">
             <div style="display:flex">
-                <div>หัวข้อโปรเจค</div>
+                <div >หัวข้อโปรเจค</div>
                 <div class="img_next"></div>
                 <div style="margin-left:1rem">
                     <Label>Design</Label>

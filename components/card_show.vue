@@ -2,7 +2,7 @@
     <div>
         <div class="card" >
             <div class="into_card">
-                <a onclick="window.location.href='/show'">
+                <a onclick="window.location.href='/alldate'">
                     <div class="card_img"></div>
                     <div class="card_deteil">
                         <div class="info_card">

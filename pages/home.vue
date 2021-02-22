@@ -2,7 +2,7 @@
     <div class="main">
         <nevbar></nevbar>
         <div class="top">
-            <div style="font-size: 1rem;">หัวข้อทั้งหมด</div>
+            <div style="font-size: 1rem; margin-left: 1rem;">หัวข้อทั้งหมด</div>
             <button class="btn-top" onclick="window.location.href='/create_topic'">สร้างหัวข้อ</button>
         </div>
         <div class="down">
