@@ -151,7 +151,7 @@ export default {
   background-color: #F5EBEB;
   border-radius: 10px;
   margin-top: 10px;
-  font-weight: bold;
+//   font-weight: bold;
 }
 .detail{
         .create_top{
