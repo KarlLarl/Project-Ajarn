@@ -4,7 +4,11 @@
             <div class="back_white">
                 <div class="input_data">
                     <div style="text-align: center;"><h3>ระบบที่ปรึกษาโปรเจคกับอาจารย์</h3></div>
-                    <div class="txt_input"><Forminput/></div>
+                    <div class="txt_input">
+                        <Forminput 
+                        @toPageLogin="toPageLogin"
+                        @returnDataInput="linkcard"/>
+                        </div>
                     <div class="btn-flex">
                         <div class="fix-size">
                             <div><button onclick="window.location.href='/home'" class="btn-login" >Login</button></div>
@@ -35,6 +39,17 @@ export default {
     components:{
         Forminput
 
+    },
+    data(){
+        return
+    },
+    methods:{
+        toPageLogin(){
+            this.$router.push('/')
+        },
+        linkcard(data){
+            this.$router.push('/home') /*ต้องตรวจสอบข้อมูลในฝั่ง Backend แล้ว บันทึกข้อมูลก่อน*/
+        },
     }
 }
 </script>

@@ -7,9 +7,15 @@
             <div class="search">
                 <input  class="input_search" type="text" value="">
                 <div class="search_icon">
-                    <a onclick="window.location.href='/create_topic'">
+                    <button class="myicon">
+                        <img :src="search_icon">  
+                    </button>
+                    <!-- <a onclick="window.location.href='/create_topic'">
                         <div class="myicon"></div>
-                    </a>        
+                        <div class="myicon">
+                          <img :src="search_icon">  
+                        </div>
+                    </a>         -->
                 </div>
             </div>
 
@@ -20,11 +26,11 @@
 </template>
 <script>
 export default {
-    // data(){
-    //     return{
-    //         icon_url:'https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png'
-    //     }
-    // }
+    data(){
+        return{
+            search_icon:'https://www.flaticon.com/svg/vstatic/svg/622/622669.svg?token=exp=1614490330~hmac=30c7f7f62c7e3c90d83946dd444e6d10'
+        }
+    }
     
 }
 </script>
@@ -71,16 +77,21 @@ button{
             }
             .search_icon{
                 width: 10%;
-                padding: 5px;
-                // border: none;
                 .myicon{
+                    width: 100%;
                     height: 100%;
-                    // width: 100%;
-                    // border: 1px solid black;
-                    // align-items: center;
-                    background-size: 100% 100%;
-                    background-image: url("https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png");
+                    border: none;
+                    background: white;
                 }
+                // border: none;
+                // .myicon{
+                //     height: 100%;
+                //     // width: 100%;
+                //     // border: 1px solid black;
+                //     // align-items: center;
+                //     background-size: 100% 100%;
+                //     background-image: url("https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png");
+                // }
             }
         }
     }

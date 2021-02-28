@@ -2,8 +2,8 @@
   <div>
     <!-- ถ้าหน้า login -->
     <div v-if="path === 'login'">
-      <div><input class="in_log" placeholder="Email" type="text"></div>
-      <div><input class="in_log" placeholder="Password" type="password"></div>
+        <div><input class="in_log" placeholder="Email" type="text" v-model="model_data.email" required></div>
+        <div><input class="in_log" placeholder="Password" type="password" v-model="model_data.password" required></div>
     </div>
     <!-- ถ้าหน้า topic -->
     <div v-if="path === 'create_topic'" class="detail">
@@ -130,8 +130,15 @@
 export default {
   data(){
         return{
-            path: ''
+            path: '',
+            model_data:{
+                email:'',
+                password:''
+            }
               }
+  },
+  methods:{
+
   },
   mounted(){
         this.path = this.$route.name
@@ -143,6 +150,22 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Prompt:100,200,400,500,600,700&display=swap');
 
 *{font-family: 'Prompt', sans-serif;}
+                    // .btn-form{
+                    // padding: 10px;
+                    // background: #325EFB;
+                    // border-radius: 10px;
+                    // width: 100%;
+                    // border:none;
+                    // color: white;
+                    // font-weight: bold;
+                    // font-size: 15px;
+                    // margin-bottom: 10px;
+                    // box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+                    // transition: 0.4s ease-out;
+                    // &:hover {
+                    // box-shadow: 6px 6px rgba(0, 0, 0, 0.6);
+                    //     }
+                    // }
 
 .in_log {
   width: 100%;
