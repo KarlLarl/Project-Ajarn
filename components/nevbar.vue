@@ -8,7 +8,7 @@
                 <input  class="input_search" type="text" value="">
                 <div class="search_icon">
                     <button class="myicon">
-                        <img :src="search_icon">  
+                        <img class="img" :src="search_icon">  
                     </button>
                     <!-- <a onclick="window.location.href='/create_topic'">
                         <div class="myicon"></div>
@@ -28,7 +28,7 @@
 export default {
     data(){
         return{
-            search_icon:'https://www.flaticon.com/svg/vstatic/svg/622/622669.svg?token=exp=1614490330~hmac=30c7f7f62c7e3c90d83946dd444e6d10'
+            search_icon:'https://www.flaticon.com/svg/vstatic/svg/483/483356.svg?token=exp=1614698748~hmac=607868c5a528a81f4ab23c38f9162b3b'
         }
     }
     
@@ -82,6 +82,10 @@ button{
                     height: 100%;
                     border: none;
                     background: white;
+                    .img{
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
                 // border: none;
                 // .myicon{

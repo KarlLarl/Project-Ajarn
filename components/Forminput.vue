@@ -4,6 +4,8 @@
     <div v-if="path === 'login'">
         <div><input class="in_log" placeholder="Email" type="text" v-model="model_data.email" required></div>
         <div><input class="in_log" placeholder="Password" type="password" v-model="model_data.password" required></div>
+        <button type="button"  class="btn-form" @click="returnData">SUBMIT</button>
+
     </div>
     <!-- ถ้าหน้า topic -->
     <div v-if="path === 'create_topic'" class="detail">
@@ -127,13 +129,54 @@
   </div>
 </template>
 <script>
+// import axios from "axios";
+// export default {
+//     data () {
+//         return {
+//             path: '',
+//             email: '',
+//             password: '',
+//             message: []
+//         }
+//     },
+//     mounted(){
+//         this.path = this.$route.name
+//     },
+//     methods: {
+//         returnData(){
+//             return this.$emit('returnDataInput',this.model_data)
+//         },
+//         login () {
+//             axios.post('192.168.1.148:5000/users/Forminput', {
+//                 email: this.email,
+//                 password: this.password
+//             }).then(response => {
+//                if (response.status === 200) {
+//                     localStorage.setItem('access_token', response.data.access_token);
+//                     //this.$router.push('/home');
+//                 }
+//                 //console.log(response)
+//             }), error => {
+//                 console.log(error.response)
+//                 this.error = error.response.data.access_token
+//             }
+//         }
+//     }
+// }
 export default {
-    data(){
-         return{
+  data(){
+        return{
             path: '',
+            model_data:{
+                email:'',
+                password:''
+            }
               }
   },
   methods:{
+        returnData(){
+            return this.$emit('returnDataInput',this.model_data)
+        },
 
   },
   mounted(){
@@ -144,25 +187,7 @@ export default {
 
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css?family=Prompt:100,200,400,500,600,700&display=swap');
-
 *{font-family: 'Prompt', sans-serif;}
-                    // .btn-form{
-                    // padding: 10px;
-                    // background: #325EFB;
-                    // border-radius: 10px;
-                    // width: 100%;
-                    // border:none;
-                    // color: white;
-                    // font-weight: bold;
-                    // font-size: 15px;
-                    // margin-bottom: 10px;
-                    // box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
-                    // transition: 0.4s ease-out;
-                    // &:hover {
-                    // box-shadow: 6px 6px rgba(0, 0, 0, 0.6);
-                    //     }
-                    // }
-
 .in_log {
   width: 100%;
   padding: 12px 20px;

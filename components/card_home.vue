@@ -6,8 +6,8 @@
                     <div class="card_img"></div>
                     <div class="card_deteil">
                         <div class="info_card">
-                            <Label class="card_name">Name</Label>
-                            <Label class="card_date">10/20/2010</Label>
+                            <Label class="card_name" v-model="card_Name">{{cardName}}</Label>
+                            <Label class="card_date" v-model="card_Date">{{cardDate}}</Label>
                         </div>
                         
                     </div>
@@ -21,9 +21,10 @@
 
 <script>
 export default {
-    // props:['imgCard','cardName','cardDate'],
+    props:['cardName','cardDate'],
     data(){
         return {
+
         }
     }
     
@@ -56,6 +57,8 @@ export default {
         }
         .card_deteil{
             height: 30%;
+            background: white;
+            border-radius: 0 0 5px 5px;
             .info_card{
                 display: flex;
                 flex-direction: column;

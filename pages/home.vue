@@ -5,28 +5,59 @@
             <div style="font-size: 1rem; margin-left: 1rem;">หัวข้อทั้งหมด</div>
             <button class="btn-top" onclick="window.location.href='/create_topic'">สร้างหัวข้อ</button>
         </div>
+
         <div class="down">
-            <!-- <card></card>
-            <card></card>
-            <card></card>
-            <card></card>
-            <card></card>
-            <card></card> -->
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
+            <Card v-for=" (card,index) in listCard" :key="index"
+            :cardName="card.cardName"
+            :cardDate="card.cardDate" />    
         </div>
+        
     </div>   
 </template>
 <script>
 import nevbar from '@/components/nevbar'
-import card from '@/components/card'
 import Card from '@/components/card_home'
 export default {
     components:{
-        nevbar,card,Card
+        nevbar,Card
+    },
+    data(){
+        return{
+            listCard:[
+                {
+                    cardName:'Card_1',
+                    cardDate:'1/1/1'
+                },
+                {
+                    cardName:'Card_2',
+                    cardDate:'2/2/2'
+                },
+                {
+                    cardName:'Card_3',
+                    cardDate:'3/3/3'
+                },
+                {
+                    cardName:'Card_4',
+                    cardDate:'4/4/4'
+                },
+                {
+                    cardName:'Card_5',
+                    cardDate:'5/5/5'
+                },
+                {
+                    cardName:'Card_6',
+                    cardDate:'6/6/6'
+                },
+                {
+                    cardName:'Card_7',
+                    cardDate:'7/7/7'
+                },
+                {
+                    cardName:'Card_8',
+                    cardDate:'8/8/8'
+                },
+            ]
+        }
     }
 
 }

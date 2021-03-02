@@ -40,10 +40,15 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '@nuxtjs/auth-next',
   ],
+  auth: {
+    // Options
+  },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
-  axios: {},
+  axios: {
+  },
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {},
